@@ -1,0 +1,10 @@
+import { Sidebar } from '@/components/layout/sidebar';
+
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex">
+      <Sidebar />
+      <main className="min-h-screen flex-1 bg-graphite-950">{children}</main>
+    </div>
+  );
+}
